@@ -18,7 +18,7 @@ var mod = angular.module('ngRemember', [])
         }
 
         scope.$watch('value', function (newValue) {
-          localStorage.setItem(key, newValue);
+          localStorage.setItem(key, newValue || '');
         });
       }
     };
